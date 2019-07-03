@@ -1,0 +1,132 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+
+            Form:
+              formEditor:
+                editors:
+                  900:
+                    # Extend finisher drop down
+                    selectOptions:
+                      35:
+                        value: 'NewsletterFinisher'
+                        label: 'Newsletter'
+                propertyCollections:
+                  finishers:
+                     # add finisher fields
+                     25:
+                        identifier: 'NewsletterFinisher'
+                        editors:
+                           # __inheritances:
+                           #    10: 'TYPO3.CMS.Form.mixins.formElementMixins.BaseCollectionEditorsMixin'
+                           100:
+                             label: "Newsletter"
+                           # auth key
+                           110:
+                             identifier: 'authkey'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Newsletter2go Auth Key'
+                             propertyPath: 'options.authkey'
+                             propertyValidators:
+                               10: 'NotEmpty'
+
+                           # Newsletter2go E-Mail
+                           120:
+                             identifier: 'email'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Newsletter2go E-Mail'
+                             propertyPath: 'options.email'
+                             enableFormelementSelectionButton: true
+                             propertyValidators:
+                               10: 'NotEmpty'
+                               20: 'FormElementIdentifierWithinCurlyBracesInclusive'
+
+                           # Newsletter2go Password
+                           130:
+                             identifier: 'pass'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Newsletter2go Password'
+                             propertyPath: 'options.pass'
+                             propertyValidators:
+                               10: 'NotEmpty'
+
+                           # success PID
+                           140:
+                             identifier: 'successPid'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Success PID'
+                             propertyPath: 'options.successPid'
+                             propertyValidators:
+                               10: 'NotEmpty'
+                               20: 'Integer'
+
+                           # failure PID
+                           150:
+                             identifier: 'failurePid'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Failure PID'
+                             propertyPath: 'options.failurePid'
+                             propertyValidators:
+                               10: 'NotEmpty'
+                               20: 'Integer'
+                            # field names
+                           160:
+                             identifier: 'fieldNames'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Field Names'
+                             propertyPath: 'options.fieldNames'
+                             propertyValidators:
+                               10: 'NotEmpty'
+
+          finishersDefinition:
+            NewsletterFinisher:
+              implementationClassName: 'Brain\FormNewsletter\Domain\Finishers\NewsletterFinisher'
+              options:
+                email: ''
+                firstname: ''
+                lastname: ''
+                successPid: ''
+                failurePid: ''
+                fieldNames: ''
+              formEditor:
+                iconIdentifier: 'form-finisher'
+                label: 'Newsletter'
+                predefinedDefaults:
+                  options:
+                    email: ''
+                    firstname: ''
+                    lastname: ''
+                    successPid: ''
+                    failurePid: ''
+                    fieldNames: ''
+              # displayed when overriding finisher settings
+              FormEngine:
+                label: 'Newsletter'
+                elements:
+                  authkey:
+                    label: 'Newsletter2go Auth Key'
+                    config:
+                      type: 'text'
+                  email:
+                    label: 'Newsletter2go E-Mail'
+                    config:
+                      type: 'text'
+                  pass:
+                    label: 'Newsletter2go Password'
+                    config:
+                      type: 'text'
+                  successPid:
+                    label: 'Success PID'
+                    config:
+                      type: 'text'
+                  failurePid:
+                    label: 'Failure PID'
+                    config:
+                      type: 'text'
+                  fieldNames:
+                    label: 'Field Names'
+                    config:
+                      type: 'text'

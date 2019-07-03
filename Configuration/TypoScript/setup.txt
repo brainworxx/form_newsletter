@@ -1,0 +1,15 @@
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            1000 = EXT:form_newsletter/Configuration/Yaml/Setup.yaml
+        }
+    }
+}
+
+module.tx_form {
+    settings {
+        yamlConfigurations {
+            1000 = EXT:form_newsletter/Configuration/Yaml/SetupBE.yaml
+        }
+    }
+}
