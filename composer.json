@@ -14,7 +14,7 @@
       "newsletter",
       "form"
     ],
-    "license": ["GPL-2.0+"],
+    "license": ["LGPL-2.1-or-later"],
     "require": {
         "typo3/cms-core": "^9.5",
         "typo3/cms-form": "^9.5.0"
