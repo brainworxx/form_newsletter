@@ -12,7 +12,7 @@ Form Newsletter - Newsletter2go & TYPO3's Form
 	en
 
 :Description:
-  This extension combines the Form extension with the newsletter service
+	This extension combines the Form extension with the newsletter service
 	Newsletter2go. It creates a new finisher which can add new recipients to your
 	Newsletter2go account.
 
