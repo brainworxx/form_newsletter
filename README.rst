@@ -1,0 +1,19 @@
+==============================================
+Form Newsletter - Newsletter2go & TYPO3's Form
+==============================================
+
+**Key features:**
+
+* Combines newsletter service Newsletter2go and TYPO3's Form extension.
+
+* Creates a finisher which adds new recipients to your Newsletter2go account.
+
+* You can add as many fields of information as you want to.
+
+**Useful links:**
+
+* `Documentation <https://www.google.com>`_
+
+* `TYPO3 TER <https://www.google.com>`_
+
+* `Newsletter2go API Documentation <https://docs.newsletter2go.com>`_

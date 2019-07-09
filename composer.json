@@ -1,29 +1,36 @@
 {
-    "name": "brain/form-newsletter",
+    "name": "brainworxx/form-newsletter",
     "type": "typo3-cms-extension",
     "description": "This extension combines the Form extension with the newsletter service Newsletter2go. It creates a new finisher which can add new recipients to your Newsletter2go account.",
+    "homepage": "https://github.com/brainworxx/form_newsletter",
     "authors": [
         {
-            "name": "Jan Meinert",
-            "role": "Developer"
+            "name": "Brainworxx",
+            "homepage": "http://www.brainworxx.de/"
         }
     ],
-    "version": "1.0.0",
+    "keywords": [
+      "newsletter2go",
+      "newsletter",
+      "form"
+    ],
+    "license": ["GPL-2.0+"],
     "require": {
-        "typo3/cms-core": "^9.5"
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-form": "^9.5.0"
     },
     "autoload": {
         "psr-4": {
-            "Brain\\FormNewsletter\\": "Classes"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Brain\\FormNewsletter\\Tests\\": "Tests"
+            "Brainworxx\\FormNewsletter\\": "Classes"
         }
     },
     "replace": {
         "form_newsletter": "self.version",
         "typo3-ter/form-newsletter": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "form-newsletter"
+        }
     }
 }

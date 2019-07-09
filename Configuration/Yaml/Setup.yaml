@@ -33,11 +33,11 @@ TYPO3:
                              propertyValidators:
                                10: 'NotEmpty'
 
-                           # Newsletter2go E-Mail
+                           # Newsletter2go Email
                            120:
                              identifier: 'email'
                              templateName: 'Inspector-TextEditor'
-                             label: 'Newsletter2go E-Mail'
+                             label: 'Newsletter2go Email'
                              propertyPath: 'options.email'
                              enableFormelementSelectionButton: true
                              propertyValidators:
@@ -83,7 +83,7 @@ TYPO3:
 
           finishersDefinition:
             NewsletterFinisher:
-              implementationClassName: 'Brain\FormNewsletter\Domain\Finishers\NewsletterFinisher'
+              implementationClassName: 'Brainworxx\FormNewsletter\Domain\Finishers\NewsletterFinisher'
               options:
                 email: ''
                 firstname: ''
@@ -111,7 +111,7 @@ TYPO3:
                     config:
                       type: 'text'
                   email:
-                    label: 'Newsletter2go E-Mail'
+                    label: 'Newsletter2go Email'
                     config:
                       type: 'text'
                   pass:

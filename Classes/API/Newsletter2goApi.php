@@ -1,9 +1,12 @@
 <?php
 /**
+ * @author newsletter2go <support@newsletter2go.de>
+ * @see https://github.com/newsletter2go/newsletter2go-api-php
+ *
  * For API Documentation see https://docs.newsletter2go.com
  */
 
-namespace Brain\FormNewsLetter\API;
+namespace Brainworxx\FormNewsLetter\API;
 
 class Newsletter2goApi
 {
@@ -64,6 +67,8 @@ class Newsletter2goApi
     }
 
     /**
+     * @author BRAINWORXX GmbH
+     *
      * create recipient
      * @param array $formValues
      * @param array $fieldNames
@@ -76,7 +81,7 @@ class Newsletter2goApi
         $keys = array_keys($formValues);
 
         for ($i = 0; $i < count($fieldNames); $i++) {
-          $data[$fieldNames[$i]] = $formValues[$keys[$i]];
+          $data[trim($fieldNames[$i])] = $formValues[$keys[$i]];
         }
 
         return $this->curl($endpoint, $data, static::METHOD_POST);
