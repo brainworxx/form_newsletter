@@ -92,7 +92,7 @@ TYPO3:
                 failurePid: ''
                 fieldNames: ''
               formEditor:
-                iconIdentifier: 'form-finisher'
+                iconIdentifier: 'newsletter-finisher'
                 label: 'Newsletter'
                 predefinedDefaults:
                   options:
