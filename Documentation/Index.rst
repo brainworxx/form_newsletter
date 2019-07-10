@@ -1,3 +1,10 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. include:: Includes.txt
+
 ==============================================
 Form Newsletter - Newsletter2go & TYPO3's Form
 ==============================================
@@ -44,10 +51,9 @@ a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 **Table of Contents**
 
 .. toctree::
-	:maxdepth: 5
 	:titlesonly:
 	:glob:
 
 	WhatDoesItDo/Index
 	Config/Index
-  ErrorLogging/Index
+	ErrorLogging/Index

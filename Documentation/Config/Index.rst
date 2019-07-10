@@ -1,4 +1,10 @@
-=============
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. include:: ../Includes.txt
+
 Configuration
 =============
 
@@ -11,7 +17,7 @@ All you need to do is to include the static TypoScript file in your template.
     Adding static file to template
 
 Finisher configuration
-======================
+----------------------
 
 * **Newsletter2go Auth Key:**
 
@@ -49,8 +55,8 @@ Finisher configuration
   Note that this finisher should be executed last because it uses Form's
   redirect finisher.
 
-Example configuration:
-----------------------
+Example configuration
+---------------------
 
 .. figure:: ../Images/form-module.png
     :width: 714px

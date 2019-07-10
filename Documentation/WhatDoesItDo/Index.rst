@@ -1,11 +1,12 @@
-.. _whatdoesitdo:
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
 
-================
+.. include:: ../Includes.txt
+
 What does it do?
 ================
-
-Key features:
-=============
 
 * Combines newsletter service Newsletter2go and TYPO3's Form extension.
 
