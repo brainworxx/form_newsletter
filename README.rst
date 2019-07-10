@@ -12,7 +12,7 @@ Form Newsletter - Newsletter2go & TYPO3's Form
 
 **Useful links:**
 
-* `Documentation <https://www.google.com>`_
+* `Documentation <https://docs.typo3.org/p/brainworxx/form-newsletter/master/en-us/>`_
 
 * `TYPO3 TER <https://extensions.typo3.org/extension/form_newsletter/>`_
 
