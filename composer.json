@@ -16,8 +16,8 @@
     ],
     "license": ["LGPL-2.1-or-later"],
     "require": {
-        "typo3/cms-core": "^9.5",
-        "typo3/cms-form": "^9.5.0"
+        "typo3/cms-core": ">=8.7.0 <=9.5.99",
+        "typo3/cms-form": ">=8.7.0 <=9.5.99"
     },
     "autoload": {
         "psr-4": {
@@ -30,7 +30,7 @@
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "form-newsletter"
+            "extension-key": "form_newsletter"
         }
     }
 }
