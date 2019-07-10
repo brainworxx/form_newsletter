@@ -14,6 +14,6 @@ Form Newsletter - Newsletter2go & TYPO3's Form
 
 * `Documentation <https://www.google.com>`_
 
-* `TYPO3 TER <https://www.google.com>`_
+* `TYPO3 TER <https://extensions.typo3.org/extension/form_newsletter/>`_
 
 * `Newsletter2go API Documentation <https://docs.newsletter2go.com>`_
