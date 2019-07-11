@@ -51,6 +51,21 @@ Finisher configuration
   first_name, last_name, email. See the
   `API documentation <https://docs.newsletter2go.com>`_ for more information.
 
+* **Double-Opt-In ID (optional):**
+
+  Newsletter2go is capable of sending a double-opt-in email when a new recipient
+  subscribes. Once the customer confirms the addition to the newsletter they
+  will be added. You have to set up a form on
+  `newsletter2go.de <https://www.newsletter2go.de>`_ which uses the
+  double-opt-in service. Once you have done that just copy the id of said form
+  and paste it into this field. If you can't see the id on
+  `newsletter2go.de <https://www.newsletter2go.de>`_ make sure 'Developer Mode'
+  is activated.
+
+  This feature is optional. If you leave this empty the recipients will be
+  added without having to confirm it. Not using said service might cause legal
+  issues. Newsletter2go informs you about what you need and what not.
+
 .. note::
   Note that this finisher should be executed last because it uses Form's
   redirect finisher.

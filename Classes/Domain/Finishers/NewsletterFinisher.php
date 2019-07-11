@@ -50,6 +50,7 @@ class NewsletterFinisher extends \TYPO3\CMS\Form\Domain\Finishers\AbstractFinish
     $successPid = $this->parseOption('successPid');
     $failurePid = $this->parseOption('failurePid');
     $fieldNames = $this->parseOption('fieldNames');
+    $doubleOptIn = $this->parseOption('doubleOptIn');
 
     // Form Values
     $formValues = $this->finisherContext->getFormValues();
@@ -66,7 +67,11 @@ class NewsletterFinisher extends \TYPO3\CMS\Form\Domain\Finishers\AbstractFinish
     $api->setSSLVerification(false);
 
     try {
-      $user = $api->createRecipient($formValues, explode(',', $fieldNames));
+      if ($doubleOptIn !== '') {
+        $response = $api->sendDoubleOptIn($formValues, explode(',', $fieldNames), strtolower($doubleOptIn));
+      } else {
+        $response = $api->createRecipient($formValues, explode(',', $fieldNames));
+      }
     } catch (\Exception $e) {
       $error = true;
 
@@ -80,7 +85,7 @@ class NewsletterFinisher extends \TYPO3\CMS\Form\Domain\Finishers\AbstractFinish
       );
     }
 
-    $pid = (!$error && $user->status <= 201) ? $successPid : $failurePid;
+    $pid = (!$error && $response->status <= 201) ? $successPid : $failurePid;
 
     // create Form's Redirect Finisher
     $formDefinition = $this->finisherContext->getFormRuntime()->getFormDefinition();

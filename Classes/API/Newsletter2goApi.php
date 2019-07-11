@@ -88,6 +88,28 @@ class Newsletter2goApi
     }
 
     /**
+     * @author BRAINWORXX GmbH
+     *
+     * send double-opt-in email
+     * @param array $formValues
+     * @param array $fieldNames
+     * @param string $id
+     * @return stdClass
+     */
+    public function sendDoubleOptIn($formValues, $fieldNames, $id)
+    {
+        $endpoint = "/forms/submit/$id";
+        $data = array();
+        $keys = array_keys($formValues);
+
+        for ($i = 0; $i < count($fieldNames); $i++) {
+          $data[trim($fieldNames[$i])] = $formValues[$keys[$i]];
+        }
+
+        return $this->curl($endpoint, ["recipient" => $data], static::METHOD_POST);
+    }
+
+    /**
      * get all newsletters in a list
      * @param string $listId
      * @return stdClass

@@ -72,7 +72,7 @@ TYPO3:
                              propertyValidators:
                                10: 'NotEmpty'
                                20: 'Integer'
-                            # field names
+                           # field names
                            160:
                              identifier: 'fieldNames'
                              templateName: 'Inspector-TextEditor'
@@ -80,28 +80,36 @@ TYPO3:
                              propertyPath: 'options.fieldNames'
                              propertyValidators:
                                10: 'NotEmpty'
+                           # double opt in id
+                           170:
+                             identifier: 'doubleOptIn'
+                             templateName: 'Inspector-TextEditor'
+                             label: 'Double-Opt-In ID (optional)'
+                             propertyPath: 'options.doubleOptIn'
 
           finishersDefinition:
             NewsletterFinisher:
               implementationClassName: 'Brainworxx\FormNewsletter\Domain\Finishers\NewsletterFinisher'
               options:
+                authkey: ''
                 email: ''
-                firstname: ''
-                lastname: ''
+                pass: ''
                 successPid: ''
                 failurePid: ''
                 fieldNames: ''
+                doubleOptIn: ''
               formEditor:
                 iconIdentifier: 'newsletter-finisher'
                 label: 'Newsletter'
                 predefinedDefaults:
                   options:
+                    authkey: ''
                     email: ''
-                    firstname: ''
-                    lastname: ''
+                    pass: ''
                     successPid: ''
                     failurePid: ''
                     fieldNames: ''
+                    doubleOptIn: ''
               # displayed when overriding finisher settings
               FormEngine:
                 label: 'Newsletter'
@@ -128,5 +136,9 @@ TYPO3:
                       type: 'text'
                   fieldNames:
                     label: 'Field Names'
+                    config:
+                      type: 'text'
+                  doubleOptIn:
+                    label: 'Double-Opt-In ID (optional)'
                     config:
                       type: 'text'

@@ -8,6 +8,8 @@ Form Newsletter - Newsletter2go & TYPO3's Form
 
 * Creates a finisher which adds new recipients to your Newsletter2go account.
 
+* The usage of double-opt-in emails is also supported.
+
 * You can add as many fields of information as you want to.
 
 **Useful links:**
