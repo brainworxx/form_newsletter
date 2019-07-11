@@ -54,6 +54,13 @@ class NewsletterFinisher extends \TYPO3\CMS\Form\Domain\Finishers\AbstractFinish
     // Form Values
     $formValues = $this->finisherContext->getFormValues();
 
+    // get rid of fields without content (e.g. static text)
+    foreach ($formValues as $key => $value) {
+      if ($value === null) {
+        unset($formValues[$key]);
+      }
+    }
+
     // Make an api call and redirect depending on the response.
     $api = new \Brainworxx\FormNewsletter\API\Newsletter2goApi($authKey, $userEmail, $userPassword);
     $api->setSSLVerification(false);
