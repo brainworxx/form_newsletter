@@ -14,7 +14,7 @@
  *
  *   GNU Lesser General Public License Version 2.1
  *
- *   Form Newsletter Copyright (C) 2019 Brainworxx GmbH
+ *   Form Newsletter Copyright (C) 2019–2020 Brainworxx GmbH
  *
  *   This library is free software; you can redistribute it and/or modify it
  *   under the terms of the GNU Lesser General Public License as published by
@@ -32,15 +32,15 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 $boot = function () {
-  if (TYPO3_MODE === 'BE') {
-    /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
-    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-    $iconRegistry->registerIcon(
-      'newsletter-finisher',
-      \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-      ['source' => 'EXT:form_newsletter/ext_icon.svg']
-    );
-  }
+    if (TYPO3_MODE === 'BE') {
+        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        $iconRegistry->registerIcon(
+            'newsletter-finisher',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:form_newsletter/ext_icon.svg']
+        );
+    }
 };
 
 $boot();

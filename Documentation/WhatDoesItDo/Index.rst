@@ -12,6 +12,6 @@ What does it do?
 
 * Creates a finisher which adds new recipients to your Newsletter2go account.
 
-* The usage of double-opt-in emails is also supported.
+* Uses Newsletter2go's double opt-in email feature.
 
 * You can add as many fields of information as you want to.

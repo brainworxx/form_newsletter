@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file source-language="en" datatype="plaintext" original="EXT:form_newsletter/Resources/Private/Language/locallang.xlf" product-name="form_newsletter">
+        <header/>
+        <body>
+            <trans-unit id="form_newsletter.header.label" xml:space="preserve">
+                <source>Newsletter</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.authkey.label" xml:space="preserve">
+                <source>Newsletter2go Auth Key</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.email.label" xml:space="preserve">
+                <source>Newsletter2go Email</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.pass.label" xml:space="preserve">
+                <source>Newsletter2go Password</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.successPage.label" xml:space="preserve">
+                <source>Success Page</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.successPage.button.label" xml:space="preserve">
+                <source>Page</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.failurePage.label" xml:space="preserve">
+                <source>Failure Page</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.failurePage.button.label" xml:space="preserve">
+                <source>Page</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.fieldNames.label" xml:space="preserve">
+                <source>Field Names</source>
+            </trans-unit>
+            <trans-unit id="form_newsletter.doubleOptIn.label" xml:space="preserve">
+                <source>Double opt-in ID (optional)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

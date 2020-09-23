@@ -1,0 +1,55 @@
+TYPO3:
+    CMS:
+        Form:
+            prototypes:
+                standard:
+                    finishersDefinition:
+                        NewsletterFinisher:
+                            # displayed when overriding finisher settings
+                            FormEngine:
+                                label: form_newsletter.header.label
+                                elements:
+                                    authkey:
+                                        label: form_newsletter.authkey.label
+                                        config:
+                                            type: 'input'
+                                    email:
+                                        label: form_newsletter.email.label
+                                        config:
+                                            type: 'input'
+                                    pass:
+                                        label: form_newsletter.pass.label
+                                        config:
+                                            type: 'input'
+                                    successPage:
+                                        label: form_newsletter.successPage.label
+                                        config:
+                                            type: 'group'
+                                            internal_type: db
+                                            allowed: pages
+                                            size: 1
+                                            minitems: 1
+                                            maxitems: 1
+                                            fieldWizard:
+                                                recordsOverview:
+                                                    disabled: 1
+                                    failurePage:
+                                        label: form_newsletter.failurePage.label
+                                        config:
+                                            type: 'group'
+                                            internal_type: db
+                                            allowed: pages
+                                            size: 1
+                                            minitems: 1
+                                            maxitems: 1
+                                            fieldWizard:
+                                                recordsOverview:
+                                                    disabled: 1
+                                    fieldNames:
+                                        label: form_newsletter.fieldNames.label
+                                        config:
+                                            type: 'input'
+                                    doubleOptIn:
+                                        label: form_newsletter.doubleOptIn.label
+                                        config:
+                                            type: 'input'

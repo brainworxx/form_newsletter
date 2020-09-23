@@ -1,7 +1,8 @@
 plugin.tx_form {
     settings {
         yamlConfigurations {
-            1000 = EXT:form_newsletter/Configuration/Yaml/Setup.yaml
+            1000 = EXT:form_newsletter/Configuration/Form/BaseSetup.yaml
+            1001 = EXT:form_newsletter/Configuration/Form/FormEngineSetup.yaml
         }
     }
 }
@@ -9,7 +10,9 @@ plugin.tx_form {
 module.tx_form {
     settings {
         yamlConfigurations {
-            1000 = EXT:form_newsletter/Configuration/Yaml/SetupBE.yaml
+            1000 = EXT:form_newsletter/Configuration/Form/BaseSetup.yaml
+            1001 = EXT:form_newsletter/Configuration/Form/FormEditorSetup.yaml
+            1002 = EXT:form_newsletter/Configuration/Form/FormEngineSetup.yaml
         }
     }
 }

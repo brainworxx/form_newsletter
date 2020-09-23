@@ -1,0 +1,110 @@
+TYPO3:
+    CMS:
+        Form:
+            prototypes:
+                standard:
+                    formElementsDefinition:
+                        Form:
+                            formEditor:
+                                editors:
+                                    900:
+                                        # Extend finisher drop down
+                                        selectOptions:
+                                            35:
+                                                value: 'NewsletterFinisher'
+                                                label: form_newsletter.header.label
+                                propertyCollections:
+                                    finishers:
+                                        # add finisher fields
+                                        25:
+                                            identifier: 'NewsletterFinisher'
+                                            editors:
+                                                __inheritances:
+                                                    10: 'TYPO3.CMS.Form.mixins.formElementMixins.BaseCollectionEditorsMixin'
+                                                100:
+                                                    label: form_newsletter.header.label
+                                                # auth key
+                                                110:
+                                                    identifier: 'authkey'
+                                                    templateName: 'Inspector-TextEditor'
+                                                    label: form_newsletter.authkey.label
+                                                    propertyPath: 'options.authkey'
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+
+                                                # Newsletter2go Email
+                                                120:
+                                                    identifier: 'email'
+                                                    templateName: 'Inspector-TextEditor'
+                                                    label: form_newsletter.email.label
+                                                    propertyPath: 'options.email'
+                                                    enableFormelementSelectionButton: true
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+
+                                                # Newsletter2go Password
+                                                130:
+                                                    identifier: 'pass'
+                                                    templateName: 'Inspector-TextEditor'
+                                                    label: form_newsletter.pass.label
+                                                    propertyPath: 'options.pass'
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+
+                                                # success Page
+                                                140:
+                                                    identifier: 'successPage'
+                                                    templateName: 'Inspector-Typo3WinBrowserEditor'
+                                                    label: form_newsletter.successPage.label
+                                                    propertyPath: 'options.successPage'
+                                                    buttonLabel: form_newsletter.successPage.button.label
+                                                    browsableType: 'pages'
+                                                    iconIdentifier: apps-pagetree-page-default
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+                                                        20: 'Integer'
+
+                                                # failure Page
+                                                150:
+                                                    identifier: 'failurePage'
+                                                    templateName: 'Inspector-Typo3WinBrowserEditor'
+                                                    label: form_newsletter.failurePage.label
+                                                    propertyPath: 'options.failurePage'
+                                                    buttonLabel: form_newsletter.failurePage.button.label
+                                                    browsableType: 'pages'
+                                                    iconIdentifier: apps-pagetree-page-default
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+                                                        20: 'Integer'
+
+                                                # field names
+                                                160:
+                                                    identifier: 'fieldNames'
+                                                    templateName: 'Inspector-TextEditor'
+                                                    label: form_newsletter.fieldNames.label
+                                                    propertyPath: 'options.fieldNames'
+                                                    propertyValidators:
+                                                        10: 'NotEmpty'
+
+                                                # double opt-in id
+                                                170:
+                                                    identifier: 'doubleOptIn'
+                                                    templateName: 'Inspector-TextEditor'
+                                                    label: form_newsletter.doubleOptIn.label
+                                                    propertyPath: 'options.doubleOptIn'
+                    
+                    finishersDefinition:
+                        NewsletterFinisher:
+                            formEditor:
+                                iconIdentifier: 'newsletter-finisher'
+                                label: form_newsletter.header.label
+                                predefinedDefaults:
+                                    options:
+                                        authkey: ''
+                                        email: ''
+                                        pass: ''
+                                        successPage: ''
+                                        failurePage: ''
+                                        fieldNames: ''
+                                        doubleOptIn: ''
+                                        

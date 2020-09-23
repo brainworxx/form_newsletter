@@ -10,7 +10,7 @@ Configuration
 
 All you need to do is to include the static TypoScript file in your template.
 
-.. figure:: ../Images/static-file.png
+.. figure:: ../Images/static-file.JPG
     :width: 714px
     :alt: Adding static file to template
 
@@ -32,11 +32,11 @@ Finisher configuration
 
   The password of your Newsletter2go account.
 
-* **Success PID:**
+* **Success Page:**
 
   The page the extension will redirect to if a recipient was successfully added.
 
-* **Failure PID:**
+* **Failure Page:**
 
   The page the extension will redirect to if a recipient was not successfully
   added.
@@ -53,18 +53,17 @@ Finisher configuration
 
 * **Double-Opt-In ID (optional):**
 
-  Newsletter2go is capable of sending a double-opt-in email when a new recipient
+  Newsletter2go is capable of sending a double opt-in email when a new recipient
   subscribes. Once the customer confirms the addition to the newsletter they
   will be added. You have to set up a form on
   `newsletter2go.de <https://www.newsletter2go.de>`_ which uses the
-  double-opt-in service. Once you have done that just copy the id of said form
+  double opt-in service. Once you have done that just copy the id of said form
   and paste it into this field. If you can't see the id on
   `newsletter2go.de <https://www.newsletter2go.de>`_ make sure 'Developer Mode'
   is activated.
 
   This feature is optional. If you leave this empty the recipients will be
-  added without having to confirm it. Not using said service might cause legal
-  issues. Newsletter2go informs you about what you need and what not.
+  added without having to confirm it.
 
 .. note::
   Note that this finisher should be executed last because it uses Form's
@@ -73,7 +72,7 @@ Finisher configuration
 Example configuration
 ---------------------
 
-.. figure:: ../Images/form-module.png
+.. figure:: ../Images/form-module.JPG
     :width: 714px
     :alt: Example configuration
 

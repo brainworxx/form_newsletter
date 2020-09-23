@@ -19,15 +19,15 @@ Form Newsletter - Newsletter2go & TYPO3's Form
 	en
 
 :Description:
-	This extension combines the Form extension with the newsletter service
-	Newsletter2go. It creates a new finisher which can add new recipients to your
+	form_newsletter combines the Form extension with the newsletter service
+	Newsletter2go. It creates a finisher which can add new recipients to your
 	Newsletter2go account.
 
 :Keywords:
 	newsletter, newsletter2go, form
 
 :Copyright:
-	2019
+	2019–2020
 
 :Author:
 	BRAINWORXX GmbH
