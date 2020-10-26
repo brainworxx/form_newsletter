@@ -25,7 +25,6 @@
         }
     },
     "replace": {
-        "form_newsletter": "self.version",
         "typo3-ter/form-newsletter": "self.version"
     },
     "extra": {
