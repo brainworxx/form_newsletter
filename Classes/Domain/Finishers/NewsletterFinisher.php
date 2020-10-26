@@ -2,8 +2,8 @@
 /**
  * Form Newsletter
  *
- * This extension combines the Form extension with the newsletter service
- * Newsletter2go. It creates a new finisher which can add new recipients to
+ * form_newsletter combines the Form extension with the newsletter service
+ * Newsletter2go. It creates a finisher which can add new recipients to
  * your Newsletter2go account.
  *
  * @author
