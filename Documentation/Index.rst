@@ -6,7 +6,7 @@
 .. include:: Includes.txt
 
 ==============================================
-Form Newsletter - Newsletter2go & TYPO3's Form
+Form Newsletter – Newsletter2go & TYPO3's Form
 ==============================================
 
 :Classification:

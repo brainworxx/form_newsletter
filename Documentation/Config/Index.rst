@@ -51,7 +51,7 @@ Finisher configuration
   first_name, last_name, email. See the
   `API documentation <https://docs.newsletter2go.com>`_ for more information.
 
-* **Double-Opt-In ID (optional):**
+* **Double opt-in ID (optional):**
 
   Newsletter2go is capable of sending a double opt-in email when a new recipient
   subscribes. Once the customer confirms the addition to the newsletter they
